@@ -9,7 +9,7 @@ class TestStack:
         expected = [1,2,3,4,5]
         for index in range(len(expected)):
             assert(expected[index] == stk.items[index])
-
+            
     def test_push(self):
         '''Push 0 to stack'''
         stk = Stack([1,2,3,4,5])
@@ -42,7 +42,6 @@ class TestStack:
         assert(not stk.isEmpty())
         assert(stk.size() == 1)
         assert(stk.pop() == 1)
-
 
     def test_full(self):
         '''Test Stack full() method'''
